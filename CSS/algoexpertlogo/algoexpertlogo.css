@@ -1,0 +1,41 @@
+#wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #02203c;
+  gap: 50px;
+  padding-left: 50px;
+}
+
+h1 {
+  color: white;
+  font-family: monospace;
+  font-size: 48px;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+#logo::before,
+#logo::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 30px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+#logo::before {
+  transform: rotate(45deg);
+}
+
+#logo::after {
+  transform: rotate(-45deg);
+}
